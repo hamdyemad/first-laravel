@@ -1,0 +1,12 @@
+@import "../../includes/inc";
+
+
+.edit-product {
+  .breadcrumb {
+    @extend %breadCrumb;
+  }
+
+  .file-info {
+    @extend %fileInfo;
+  }
+}

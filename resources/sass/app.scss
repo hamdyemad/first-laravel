@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.alert {
+  padding: 5px !important;
+  margin: 3px 0 !important;
+}
+
+body {
+  background-color: var(--bgColor);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+
+  }
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import "admin/pagination/pagination";
+
+@import "toastr";
+// import admin files
+@import "admin/admin";
+
+// produts files
+@import "admin/products/show";
+@import "admin/products/create";
+@import "admin/products/edit";
+// categories files
+@import "admin/categories/show";
+@import "admin/categories/create";
+@import "admin/categories/edit";
+
+
+// Variables
+@import 'variables';

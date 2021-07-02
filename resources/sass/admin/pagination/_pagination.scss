@@ -1,0 +1,12 @@
+nav {
+  ul {
+    .page-item .page-link {
+      color: var(--mainColor);
+    }
+
+    .page-item.active .page-link {
+      background-color: var(--mainColor) !important;
+      border: none;
+    }
+  }
+}

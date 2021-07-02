@@ -1,0 +1,11 @@
+@import "../../includes/inc";
+
+.edit-category {
+  .breadcrumb {
+    @extend %breadCrumb;
+  }
+
+  .file-info {
+    @extend %fileInfo;
+  }
+}

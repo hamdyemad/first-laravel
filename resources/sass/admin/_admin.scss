@@ -1,0 +1,127 @@
+$sideWidth: 200px;
+
+
+.admin {
+  min-height: 100vh;
+
+  .side-nav,
+  .last {
+    transition: all 0.5s ease-in-out;
+
+  }
+
+
+  // Start Nav Side
+  .side-nav {
+    position: fixed;
+    background-color: var(--mainColor);
+    color: var(--bgColor);
+    left: 0;
+    top: 0;
+    width: $sideWidth;
+    height: 100%;
+    left: -$sideWidth;
+
+    &.active {
+      left: 0 !important;
+    }
+
+
+    .links {
+      >ul {
+        >li {
+          position: relative;
+
+          &.active {
+            background-color: var(--secColor);
+          }
+
+          a,
+          .first {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          a {
+            padding: 5px 10px;
+            color: var(--bgColor);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            .icon {
+              width: 35px;
+              height: 35px;
+              line-height: 35px;
+              font-size: 20px;
+              border-radius: 50%;
+              text-align: center;
+              background-color: var(--bgColor);
+              color: var(--mainColor);
+              margin-right: 7px;
+            }
+
+            .chevron {
+              font-size: 13px;
+              transition: all 0.3s ease-in-out;
+
+              &.active {
+                transform: rotate(90deg);
+              }
+            }
+
+            &:hover,
+            &:active {
+              color: var(--mainColor);
+              background-color: var(--bgColor);
+              padding-left: 15px;
+            }
+          }
+
+          .drop-down {
+            background-color: #415365;
+            display: none;
+
+            li a.active {
+              color: var(--mainColor) !important;
+              background-color: var(--bgColor) !important;
+              padding-left: 15px !important;
+            }
+          }
+
+          // End Drop Down
+        }
+      }
+    }
+  }
+
+  // End Nav Side
+
+  // Start Last
+  .last {
+    width: 100%;
+    padding-left: $sideWidth;
+
+
+    // Start Nav Top
+    .side-nav-top {
+      // background-color: red;
+      border-bottom: 1px solid #d6d6d6;
+
+      .geer {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 22px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    // End Nav Top
+  }
+
+  // End Last
+
+}

@@ -1,0 +1,27 @@
+// bread crumb
+%breadCrumb {
+  background-color: var(--mainColor) !important;
+  border-radius: 0;
+
+  li {
+    color: var(--bgColor);
+  }
+
+  a {
+    color: var(--bgColor);
+  }
+}
+
+
+// file info
+%fileInfo {
+  position: relative;
+
+  img {
+    border: 1px solid var(--mainColor);
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+}
